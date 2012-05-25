@@ -5,7 +5,9 @@ set(net_SOURCES
 ServerCommunication.h
 ServerCommunication.cpp
 AuthClient.h
-AuthClient.cpp)
+AuthClient.cpp
+GateClient.h
+GateClient.cpp)
 
 add_library(Net ${net_SOURCES})
 

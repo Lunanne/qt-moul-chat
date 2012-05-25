@@ -2,6 +2,7 @@
 #define _SERVER_COMM_H
 #endif
 #include "AuthClient.h"
+#include "GateClient.h"
 #include <ResManager/plResManager.h>
 class ServerCommunication
 {
@@ -10,5 +11,6 @@ public:
 	void AuthConnect();//const char* addr);
 	 ~ServerCommunication();
 private:
-	AuthClient *authclnt;
+	//AuthClient *authclnt;
+	GateClient *gateclnt;
 };

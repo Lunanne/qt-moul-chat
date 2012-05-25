@@ -3,11 +3,11 @@
 
 #include <gate/pnGateKeeperClient.h>
 
-class GateClient::pnGateKeeperClient
+class GateClient: public pnGateKeeperClient
 {
 public :
-GateClient();
-	void fetchIPAdresses();
+	GateClient();
+	void fetchIPAdresses(char *host);
 
 private:
   virtual void onFileSrvIpAddressReply(uint32_t transId, const plString& addr);
