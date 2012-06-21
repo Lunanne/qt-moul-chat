@@ -9,12 +9,12 @@ static class ServerSettings
 		static char* settings_gateIP;
 		static char* settings_fileIP;
 
-		static char* settings_gateKeyN;
-		static char* settings_gateKeyX;
+		static unsigned char settings_gateKeyN[512];
+		static unsigned char settings_gateKeyX[512];
 
-		static char* settings_authKeyN;
-		static char* settings_authKeyX;
+		static unsigned char settings_authKeyN[512];
+		static unsigned char settings_authKeyX[512];
 
-		static char* settings_gameKeyN;
-		static char* settings_gameKeyX;
+		static unsigned char settings_gameKeyN[512];
+		static unsigned char settings_gameKeyX[512];
 };

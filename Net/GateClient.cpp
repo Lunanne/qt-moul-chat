@@ -1,6 +1,6 @@
 #include "GateClient.h"
 #include <iostream>
-GateClient::GateClient( char* keyN,char* keyX)
+GateClient::GateClient(const unsigned char* keyN,const unsigned char* keyX)
 {
 	setKeys(keyN,keyX,false);
   	setClientInfo(906,50,1,plUuid("ea489821-6c35-4bd0-9dae-bb17c585e680"));
