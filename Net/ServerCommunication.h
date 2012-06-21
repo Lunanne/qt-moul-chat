@@ -3,6 +3,7 @@
 #endif
 #include "AuthClient.h"
 #include "GateClient.h"
+#include "ServerSettings.h"
 #include <ResManager/plResManager.h>
 class ServerCommunication
 {
@@ -11,6 +12,6 @@ public:
 	void AuthConnect();//const char* addr);
 	 ~ServerCommunication();
 private:
-	//AuthClient *authclnt;
-	GateClient *gateclnt;
+	AuthClient *authclnt;
+	//GateClient *gateclnt;
 };

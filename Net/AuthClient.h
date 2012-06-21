@@ -22,6 +22,7 @@ public:
    //virtual void onVaultInitAgeReply(uint32_t transId, ENetError result, uint32_t ageId, uint32_t ageInfoId);
    //virtual void onVaultNodeFetched(uint32_t transId, ENetError result, const pnVaultNode& node);
    //virtual void onVaultNodeRefsFetched(uint32_t transId, ENetError result, size_t count, const pnVaultNodeRef* refs);
+   void onPingReply(uint32_t transId, uint32_t pingTimeMs);
 	 
 private: 
         uint32_t serverChallenge;
