@@ -6,10 +6,9 @@ ServerCommunication :: ServerCommunication(plResManager *prm)
 {
 	ServerSettings::Init();
 	//authclnt = new AuthClient(prm);
-	//char host[15] = "192.168.56.102";
-	//gateclnt = new GateClient();
-	//gateclnt->fetchIPAdresses(host);
-	//authclnt->Connect(host);
+	//gateclnt = new GateClient(settings_gateKeyN,settings_gateKeyX);
+	//gateclnt->fetchIPAdresses();
+	//authclnt->Connect();
 }
 ServerCommunication :: ~ServerCommunication()
 {

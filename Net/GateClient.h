@@ -6,7 +6,7 @@
 class GateClient: public pnGateKeeperClient
 {
 public :
-	GateClient();
+	GateClient(char* keyN, char* keyX);
 	void fetchIPAdresses(char *host);
 
 private:
