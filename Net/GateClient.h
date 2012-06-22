@@ -7,7 +7,7 @@ class GateClient: public pnGateKeeperClient
 {
 public :
 	GateClient(const unsigned char* keyN, const unsigned char* keyX);
-	void fetchIPAdresses(char *host);
+	void fetchIPAdresses(const char *host);
 
 private:
   virtual void onFileSrvIpAddressReply(uint32_t transId, const plString& addr);
