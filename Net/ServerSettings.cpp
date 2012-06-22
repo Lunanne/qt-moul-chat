@@ -6,10 +6,12 @@ void ServerSettings::Init()
 	hsFileStream *stream = new hsFileStream(PlasmaVer::pvMoul);
 	stream->open("server.ini",fmRead);
 	
-	plString temp =  stream->readLine();
-	if(temp.find("Server.Auth.Host")==0)
-	{		
-		std::cout<<temp;
+	plString input =  stream->readLine();
+	if(input.find("Server.Auth.Host")==0)
+	{	
+		plString split = input.afterFirst('"');
+		settings_authIP = split.beforeLast('"');
 	}
 	stream->close();
+	delete stream;
 }
