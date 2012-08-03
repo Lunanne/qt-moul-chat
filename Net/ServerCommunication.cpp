@@ -4,14 +4,12 @@
   
 ServerCommunication :: ServerCommunication(plResManager *prm)
 {
-	ServerSettings::Init();
-	//authclnt = new AuthClient(prm);
-	//gateclnt = new GateClient(settings_gateKeyN,settings_gateKeyX);
-	//gateclnt->fetchIPAdresses();
-	//authclnt->Connect();
+	//ServerSettings::Init();
+	authclnt = new AuthClient(prm);
+	
+	authclnt->Connect("192.168.56.101");
 }
 ServerCommunication :: ~ServerCommunication()
 {
-	//delete gateclnt;
-	//delete authclnt;
+	delete authclnt;
 }

@@ -12,6 +12,5 @@ public:
 	//void AuthConnect();//const char* addr);
 	 ~ServerCommunication();
 private:
-	//AuthClient *authclnt;
-	//GateClient *gateclnt;
+	AuthClient *authclnt;
 };

@@ -7,9 +7,7 @@ ServerCommunication.cpp
 ServerSettings.h
 ServerSettings.cpp
 AuthClient.h
-AuthClient.cpp
-GateClient.h
-GateClient.cpp)
+AuthClient.cpp)
 
 add_library(Net ${net_SOURCES})
 

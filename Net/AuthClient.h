@@ -9,7 +9,7 @@ class AuthClient : public pnAuthClient
 public:
 	AuthClient();
 	AuthClient(plResManager *manager);//:pnAuthClient(manager,true,false);
-	void AuthClient::Connect(char *host);
+	void AuthClient::Connect(const char *host);
 	 ~AuthClient();
 	 
 

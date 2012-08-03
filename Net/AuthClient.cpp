@@ -11,16 +11,16 @@ AuthClient :: AuthClient(plResManager * manager):pnAuthClient(manager,true,false
 			setKeys(keyX,keyN,false);
            
 			clientChallenge = rand();
-			
-			
+			setClientInfo(912,50,1,plUuid("ea489821-6c35-4bd0-9dae-bb17c585e680"));
+			std::cout<<"Finished setting up authclient \n";
 		}
-	void AuthClient::Connect(char *host)
+	void AuthClient::Connect(const char *host)
 	{
 		connect(host);
-		setClientInfo(906,50,1,plUuid("ea489821-6c35-4bd0-9dae-bb17c585e680"));
-		sendPingRequest(rand());
+		std::cout<<"connected \n";
+		sendPingRequest(clientChallenge);
 		//sendClientRegisterRequest();
-		std::cout <<"sending request";
+		std::cout <<"sending request \n";
 	}
 	void AuthClient::onPingReply(uint32_t transId, uint32_t pingTimeMs)
 	{
