@@ -7,19 +7,19 @@
 
 class ServerSettings
 {
-	public:
-		static void Init();
-		static const char* settings_authIP;
-		static const char* settings_gateIP;
-		static const char* settings_fileIP;
+public:
+    static void Init();
+    static const char* settings_authIP;
+    static const char* settings_gateIP;
+    static const char* settings_fileIP;
 
-		static const unsigned char settings_gateKeyN[88];
-		static const unsigned char settings_gateKeyX[88];
+    static const unsigned char settings_gateKeyN[88];
+    static const unsigned char settings_gateKeyX[88];
 
-		static const unsigned char settings_authKeyN[88];
-		static const unsigned char settings_authKeyX[88];
+    static const unsigned char settings_authKeyN[88];
+    static const unsigned char settings_authKeyX[88];
 
-		static const unsigned char settings_gameKeyN[88];
-		static const unsigned char settings_gameKeyX[88];
-		
+    static const unsigned char settings_gameKeyN[88];
+    static const unsigned char settings_gameKeyX[88];
+
 };

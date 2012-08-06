@@ -1,15 +1,15 @@
-#include "ServerCommunication.h"   
+#include "ServerCommunication.h"
 
-#include <iostream> 
-  
+#include <iostream>
+
 ServerCommunication :: ServerCommunication(plResManager *prm)
 {
-	//ServerSettings::Init();
-	authclnt = new AuthClient(prm);
-	
-	authclnt->Connect("192.168.56.101");
+    //ServerSettings::Init();
+    authclnt = new AuthClient(prm);
+
+    authclnt->Connect("192.168.56.101");
 }
 ServerCommunication :: ~ServerCommunication()
 {
-	delete authclnt;
+    delete authclnt;
 }

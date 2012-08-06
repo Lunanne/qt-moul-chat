@@ -8,9 +8,9 @@
 class ServerCommunication
 {
 public:
-	ServerCommunication(plResManager *prm);
-	//void AuthConnect();//const char* addr);
-	 ~ServerCommunication();
+    ServerCommunication(plResManager *prm);
+    //void AuthConnect();//const char* addr);
+    ~ServerCommunication();
 private:
-	AuthClient *authclnt;
+    AuthClient *authclnt;
 };
