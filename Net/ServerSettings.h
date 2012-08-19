@@ -8,18 +8,20 @@
 class ServerSettings
 {
 public:
-    static void Init();
-    static const char* settings_authIP;
-    static const char* settings_gateIP;
-    static const char* settings_fileIP;
+    ServerSettings();
+    const char* settings_authIP;
+    const char* settings_gateIP;
+    const char* settings_fileIP;
 
-    static const unsigned char settings_gateKeyN[88];
-    static const unsigned char settings_gateKeyX[88];
+   //const unsigned char settings_gateKeyN[88];
+   //const unsigned char settings_gateKeyX[88];
 
-    static const unsigned char settings_authKeyN[88];
-    static const unsigned char settings_authKeyX[88];
+   //const unsigned char settings_authKeyN[88];
+   //const unsigned char settings_authKeyX[88];
 
-    static const unsigned char settings_gameKeyN[88];
-    static const unsigned char settings_gameKeyX[88];
+   //const unsigned char settings_gameKeyN[88];
+   //const unsigned char settings_gameKeyX[88];
+
+    
 
 };

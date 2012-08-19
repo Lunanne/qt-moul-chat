@@ -13,4 +13,5 @@ public:
     ~ServerCommunication();
 private:
     AuthClient *authclnt;
+    ServerSettings *serverset;
 };
