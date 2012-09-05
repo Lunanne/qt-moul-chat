@@ -4,11 +4,12 @@
 
 #include <auth/pnAuthClient.h>
 #include <ResManager/plResManager.h>
+#include "ServerSettings.h"
 class AuthClient : public pnAuthClient
 {
 public:
     AuthClient();
-    AuthClient(plResManager *manager);//:pnAuthClient(manager,true,false);
+    AuthClient(const unsigned char* keyN,const unsigned char* keyX,plResManager *manager);//:pnAuthClient(manager,true,false);
     void Connect(const char *host);
     ~AuthClient();
 

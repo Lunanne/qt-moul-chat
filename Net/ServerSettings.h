@@ -1,6 +1,6 @@
 #ifndef _SERVER_SETTINGS_H
 #define _SERVER_SETTINGS_H
-#endif
+
 #include <Stream/hsStream.h>
 
 #define BUILD_NUMBER 912
@@ -16,12 +16,14 @@ public:
    //const unsigned char settings_gateKeyN[88];
    //const unsigned char settings_gateKeyX[88];
 
-   //const unsigned char settings_authKeyN[88];
-   //const unsigned char settings_authKeyX[88];
+   unsigned char settings_authKeyN[64];
+   unsigned char settings_authKeyX[64];
 
    //const unsigned char settings_gameKeyN[88];
    //const unsigned char settings_gameKeyX[88];
-
+private:
+    void reverseCopy(char* src, unsigned char* dst, int size) ;
     
 
 };
+#endif
