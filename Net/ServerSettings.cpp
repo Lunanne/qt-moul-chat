@@ -13,7 +13,7 @@ ServerSettings::ServerSettings()
     std::cout<<QDir(".").absoluteFilePath("server.ini").toStdString()<<"\n";
     /*
     ParseState state = TEXT;
-    QFile file("/Users/annemarije/Documents/CodingProjects/qt-moul-chat/build/Debug/server.ini");
+    QFile file("./server.ini");
     file.open(QFile::ReadOnly);
     QString arg;
     QStringList* args = new QStringList();
